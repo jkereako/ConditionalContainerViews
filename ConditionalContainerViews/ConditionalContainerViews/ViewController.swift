@@ -9,12 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
-  }
-
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     guard let destination = segue.destinationViewController as? ContainerViewController else {
       assertionFailure("Execpted ContainerViewController")
@@ -22,15 +16,9 @@ class ViewController: UIViewController {
       return
     }
 
-    // Change this value to load either view
-    destination.hasContent = true
+    // This method, `prepareForSegue:sender:` is invoked before `viewDidLoad` of the desination
+    // view controller. So, by changing the value of `hasContent` here, we can control which view to
+    // load, either the blank state view or the content view.
+    destination.hasContent = false
   }
 }
-
-// MARK: - Actions
-extension ViewController {
-  @IBAction func toggleAction(_: UIButton) {
-
-  }
-}
-

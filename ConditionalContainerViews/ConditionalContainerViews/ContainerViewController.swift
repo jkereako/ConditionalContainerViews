@@ -17,7 +17,8 @@ class ContainerViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    // Conditionally load the view controllers
+    // Either the blank state view or the content view is loaded depending on the value of
+    // `hasContent`.
     if hasContent {
       performSegueWithIdentifier(contentSegueIdentifier, sender: self)
     }
@@ -27,24 +28,12 @@ class ContainerViewController: UIViewController {
   }
 
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-
-    if childViewControllers.count > 0 {
-      //code
-      assertionFailure("Should not have gotten here")
-      return
-    }
+    segue.destinationViewController.willMoveToParentViewController(self)
 
     addChildViewController(segue.destinationViewController)
-    let destinationView = segue.destinationViewController.view
-    destinationView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
-    destinationView.frame = CGRectMake(0, 0, view.frame.size.width, view.frame.size.height)
 
-    view.addSubview(destinationView)
+    view.addSubview(segue.destinationViewController.view)
 
     segue.destinationViewController.didMoveToParentViewController(self)
   }
 }
-
-//extension ContainerViewController {
-//
-//}
