@@ -6,6 +6,6 @@ The use case is when you have a container view that may contain content. In the
 event that the container view does not contain content, the blank state view is
 loaded. Otherwise, the content view is loaded. 
 
-This project is based off of Michael Luton's [Embedded Swapping](swap) project.
+This project is based off of Michael Luton's [Embedded Swapping][swap] project.
 
 [swap]: https://github.com/mluton/EmbeddedSwapping
