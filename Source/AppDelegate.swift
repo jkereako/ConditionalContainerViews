@@ -13,7 +13,6 @@ class AppDelegate: UIResponder {
   var window: UIWindow?
 }
 
-
 extension AppDelegate: UIApplicationDelegate {
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
 
@@ -27,7 +26,7 @@ extension AppDelegate: UIApplicationDelegate {
     arguments.removeFirst()
 
     print("App launching with the following arguments: \(arguments)")
-    
+
     if arguments.contains("HasContent") {
       rootVC.hasContent = true
     }

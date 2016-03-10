@@ -12,19 +12,11 @@
 		624477311C35CB1E00456BAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6244772F1C35CB1E00456BAE /* Main.storyboard */; };
 		624477331C35CB1E00456BAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624477321C35CB1E00456BAE /* Assets.xcassets */; };
 		624477361C35CB1E00456BAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624477341C35CB1E00456BAE /* LaunchScreen.storyboard */; };
-		624477411C35CB1E00456BAE /* ConditionalContainerViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624477401C35CB1E00456BAE /* ConditionalContainerViewsTests.swift */; };
 		6244774C1C35CB1E00456BAE /* ConditionalContainerViewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6244774B1C35CB1E00456BAE /* ConditionalContainerViewsUITests.swift */; };
 		629283D21C35CE140004E196 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629283D11C35CE140004E196 /* ContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6244773D1C35CB1E00456BAE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 624477201C35CB1E00456BAE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 624477271C35CB1E00456BAE;
-			remoteInfo = ConditionalContainerViews;
-		};
 		624477481C35CB1E00456BAE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 624477201C35CB1E00456BAE /* Project object */;
@@ -42,9 +34,6 @@
 		624477321C35CB1E00456BAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		624477351C35CB1E00456BAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		624477371C35CB1E00456BAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6244773C1C35CB1E00456BAE /* ConditionalContainerViewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConditionalContainerViewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		624477401C35CB1E00456BAE /* ConditionalContainerViewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalContainerViewsTests.swift; sourceTree = "<group>"; };
-		624477421C35CB1E00456BAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		624477471C35CB1E00456BAE /* ConditionalContainerViewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConditionalContainerViewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6244774B1C35CB1E00456BAE /* ConditionalContainerViewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalContainerViewsUITests.swift; sourceTree = "<group>"; };
 		6244774D1C35CB1E00456BAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,13 +42,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		624477251C35CB1E00456BAE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		624477391C35CB1E00456BAE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				6244774A1C35CB1E00456BAE /* UITests */,
-				6244773F1C35CB1E00456BAE /* UnitTests */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -118,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				624477281C35CB1E00456BAE /* ConditionalContainerViews.app */,
-				6244773C1C35CB1E00456BAE /* ConditionalContainerViewsTests.xctest */,
 				624477471C35CB1E00456BAE /* ConditionalContainerViewsUITests.xctest */,
 			);
 			name = Products;
@@ -132,15 +112,6 @@
 				6244772D1C35CB1E00456BAE /* ViewController.swift */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		6244773F1C35CB1E00456BAE /* UnitTests */ = {
-			isa = PBXGroup;
-			children = (
-				624477401C35CB1E00456BAE /* ConditionalContainerViewsTests.swift */,
-				624477421C35CB1E00456BAE /* Info.plist */,
-			);
-			path = UnitTests;
 			sourceTree = "<group>";
 		};
 		6244774A1C35CB1E00456BAE /* UITests */ = {
@@ -171,24 +142,6 @@
 			productName = ConditionalContainerViews;
 			productReference = 624477281C35CB1E00456BAE /* ConditionalContainerViews.app */;
 			productType = "com.apple.product-type.application";
-		};
-		6244773B1C35CB1E00456BAE /* ConditionalContainerViewsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 624477531C35CB1E00456BAE /* Build configuration list for PBXNativeTarget "ConditionalContainerViewsTests" */;
-			buildPhases = (
-				624477381C35CB1E00456BAE /* Sources */,
-				624477391C35CB1E00456BAE /* Frameworks */,
-				6244773A1C35CB1E00456BAE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6244773E1C35CB1E00456BAE /* PBXTargetDependency */,
-			);
-			name = ConditionalContainerViewsTests;
-			productName = ConditionalContainerViewsTests;
-			productReference = 6244773C1C35CB1E00456BAE /* ConditionalContainerViewsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		624477461C35CB1E00456BAE /* ConditionalContainerViewsUITests */ = {
 			isa = PBXNativeTarget;
@@ -221,11 +174,6 @@
 					624477271C35CB1E00456BAE = {
 						CreatedOnToolsVersion = 7.2;
 					};
-					6244773B1C35CB1E00456BAE = {
-						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = X4GGMZ2HNY;
-						TestTargetID = 624477271C35CB1E00456BAE;
-					};
 					624477461C35CB1E00456BAE = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = X4GGMZ2HNY;
@@ -247,7 +195,6 @@
 			projectRoot = "";
 			targets = (
 				624477271C35CB1E00456BAE /* ConditionalContainerViews */,
-				6244773B1C35CB1E00456BAE /* ConditionalContainerViewsTests */,
 				624477461C35CB1E00456BAE /* ConditionalContainerViewsUITests */,
 			);
 		};
@@ -261,13 +208,6 @@
 				624477361C35CB1E00456BAE /* LaunchScreen.storyboard in Resources */,
 				624477331C35CB1E00456BAE /* Assets.xcassets in Resources */,
 				624477311C35CB1E00456BAE /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6244773A1C35CB1E00456BAE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,14 +231,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		624477381C35CB1E00456BAE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				624477411C35CB1E00456BAE /* ConditionalContainerViewsTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		624477431C35CB1E00456BAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,11 +242,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6244773E1C35CB1E00456BAE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 624477271C35CB1E00456BAE /* ConditionalContainerViews */;
-			targetProxy = 6244773D1C35CB1E00456BAE /* PBXContainerItemProxy */;
-		};
 		624477491C35CB1E00456BAE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 624477271C35CB1E00456BAE /* ConditionalContainerViews */;
@@ -453,30 +380,6 @@
 			};
 			name = Release;
 		};
-		624477541C35CB1E00456BAE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = Tests/UnitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.ConditionalContainerViewsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConditionalContainerViews.app/ConditionalContainerViews";
-			};
-			name = Debug;
-		};
-		624477551C35CB1E00456BAE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = Tests/UnitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.ConditionalContainerViewsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConditionalContainerViews.app/ConditionalContainerViews";
-			};
-			name = Release;
-		};
 		624477571C35CB1E00456BAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -518,15 +421,6 @@
 			buildConfigurations = (
 				624477511C35CB1E00456BAE /* Debug */,
 				624477521C35CB1E00456BAE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		624477531C35CB1E00456BAE /* Build configuration list for PBXNativeTarget "ConditionalContainerViewsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				624477541C35CB1E00456BAE /* Debug */,
-				624477551C35CB1E00456BAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
