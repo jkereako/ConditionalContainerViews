@@ -27,7 +27,7 @@ extension AppDelegate: UIApplicationDelegate {
     arguments.removeFirst()
 
     print("App launching with the following arguments: \(arguments)")
-
+    
     if arguments.contains("HasContent") {
       rootVC.hasContent = true
     }
