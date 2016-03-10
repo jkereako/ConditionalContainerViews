@@ -70,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="1062" y="1078"/>
         </scene>
-        <!--Blank state view-->
+        <!--Blank state-->
         <scene sceneID="7yJ-Lp-2bW">
             <objects>
-                <viewController id="BfP-fS-B6p" userLabel="Blank state view" sceneMemberID="viewController">
+                <viewController id="BfP-fS-B6p" userLabel="Blank state" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dGC-aK-Vnb"/>
                         <viewControllerLayoutGuide type="bottom" id="1Ta-KS-cd5"/>
@@ -85,14 +85,15 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="lgj-go-E2M" userLabel="Layout">
                                 <rect key="frame" x="20" y="228" width="560" height="80"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXL-La-0mE">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXL-La-0mE" userLabel="Title">
                                         <rect key="frame" x="195" y="0.0" width="169" height="39.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="blankStateTitle"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="32"/>
                                         <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This view represents a &quot;blank state&quot;. Show this when there is no content." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0z-2u-hhW">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This view represents a &quot;blank state&quot;. Show this when there is no content." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0z-2u-hhW" userLabel="Description">
                                         <rect key="frame" x="52" y="63" width="455.5" height="16.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -113,10 +114,10 @@
             </objects>
             <point key="canvasLocation" x="1775" y="674"/>
         </scene>
-        <!--Content view-->
+        <!--Content-->
         <scene sceneID="6gq-ZI-Tvh">
             <objects>
-                <viewController id="z3v-cU-cPg" userLabel="Content view" sceneMemberID="viewController">
+                <viewController id="z3v-cU-cPg" userLabel="Content" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4EP-bi-i9y"/>
                         <viewControllerLayoutGuide type="bottom" id="oB3-zs-nge"/>
@@ -130,6 +131,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="The Adventures of Huckleberry Finn" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyN-Nr-46r" userLabel="Title">
                                         <rect key="frame" x="75" y="0.0" width="410" height="29"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="contentTitle"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
