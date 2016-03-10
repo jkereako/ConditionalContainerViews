@@ -19,6 +19,6 @@ class ViewController: UIViewController {
     // This method, `prepareForSegue:sender:` is invoked before `viewDidLoad` of the desination
     // view controller. So, by changing the value of `hasContent` here, we can control which view to
     // load, either the blank state view or the content view.
-    destination.hasContent = false
+    destination.hasContent = true
   }
 }

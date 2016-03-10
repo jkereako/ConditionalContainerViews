@@ -76,12 +76,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3621E72F1C91F3880061A79C /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6244774A1C35CB1E00456BAE /* UITests */,
+				6244773F1C35CB1E00456BAE /* UnitTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		3621E7301C91F3A30061A79C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				624477321C35CB1E00456BAE /* Assets.xcassets */,
+				624477341C35CB1E00456BAE /* LaunchScreen.storyboard */,
+				6244772F1C35CB1E00456BAE /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3621E7311C91F3A70061A79C /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				624477371C35CB1E00456BAE /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
 		6244771F1C35CB1E00456BAE = {
 			isa = PBXGroup;
 			children = (
-				6244772A1C35CB1E00456BAE /* ConditionalContainerViews */,
-				6244773F1C35CB1E00456BAE /* ConditionalContainerViewsTests */,
-				6244774A1C35CB1E00456BAE /* ConditionalContainerViewsUITests */,
+				6244772A1C35CB1E00456BAE /* Source */,
+				3621E7301C91F3A30061A79C /* Resources */,
+				3621E72F1C91F3880061A79C /* Tests */,
+				3621E7311C91F3A70061A79C /* SupportFiles */,
 				624477291C35CB1E00456BAE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,36 +124,32 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6244772A1C35CB1E00456BAE /* ConditionalContainerViews */ = {
+		6244772A1C35CB1E00456BAE /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				6244772B1C35CB1E00456BAE /* AppDelegate.swift */,
-				6244772D1C35CB1E00456BAE /* ViewController.swift */,
 				629283D11C35CE140004E196 /* ContainerViewController.swift */,
-				6244772F1C35CB1E00456BAE /* Main.storyboard */,
-				624477321C35CB1E00456BAE /* Assets.xcassets */,
-				624477341C35CB1E00456BAE /* LaunchScreen.storyboard */,
-				624477371C35CB1E00456BAE /* Info.plist */,
+				6244772D1C35CB1E00456BAE /* ViewController.swift */,
 			);
-			path = ConditionalContainerViews;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		6244773F1C35CB1E00456BAE /* ConditionalContainerViewsTests */ = {
+		6244773F1C35CB1E00456BAE /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
 				624477401C35CB1E00456BAE /* ConditionalContainerViewsTests.swift */,
 				624477421C35CB1E00456BAE /* Info.plist */,
 			);
-			path = ConditionalContainerViewsTests;
+			path = UnitTests;
 			sourceTree = "<group>";
 		};
-		6244774A1C35CB1E00456BAE /* ConditionalContainerViewsUITests */ = {
+		6244774A1C35CB1E00456BAE /* UITests */ = {
 			isa = PBXGroup;
 			children = (
 				6244774B1C35CB1E00456BAE /* ConditionalContainerViewsUITests.swift */,
 				6244774D1C35CB1E00456BAE /* Info.plist */,
 			);
-			path = ConditionalContainerViewsUITests;
+			path = UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +220,6 @@
 				TargetAttributes = {
 					624477271C35CB1E00456BAE = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = X4GGMZ2HNY;
 					};
 					6244773B1C35CB1E00456BAE = {
 						CreatedOnToolsVersion = 7.2;
@@ -306,6 +329,7 @@
 				624477301C35CB1E00456BAE /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		624477341C35CB1E00456BAE /* LaunchScreen.storyboard */ = {
@@ -314,6 +338,7 @@
 				624477351C35CB1E00456BAE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -406,7 +431,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ConditionalContainerViews/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/SupportFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.ConditionalContainerViews;
@@ -418,7 +444,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ConditionalContainerViews/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/SupportFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.ConditionalContainerViews;
@@ -430,7 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = ConditionalContainerViewsTests/Info.plist;
+				INFOPLIST_FILE = Tests/UnitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.ConditionalContainerViewsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,7 +469,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = ConditionalContainerViewsTests/Info.plist;
+				INFOPLIST_FILE = Tests/UnitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.ConditionalContainerViewsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -453,7 +480,7 @@
 		624477571C35CB1E00456BAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = ConditionalContainerViewsUITests/Info.plist;
+				INFOPLIST_FILE = Tests/UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.ConditionalContainerViewsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -465,7 +492,7 @@
 		624477581C35CB1E00456BAE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = ConditionalContainerViewsUITests/Info.plist;
+				INFOPLIST_FILE = Tests/UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.ConditionalContainerViewsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
